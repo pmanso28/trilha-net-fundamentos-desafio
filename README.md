@@ -1,8 +1,13 @@
 # DIO - Trilha .NET - Fundamentos
 www.dio.me
 
+**Languages** <br>
+- [Português](#português)  <br>
+- [English](#english)
+
+### Português
 ## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
+Atividade de projeto feita como parte do Decola Tech Avanade 2024 
 
 ## Contexto
 Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
@@ -35,4 +40,49 @@ Por último, deverá ser feito um menu interativo com as seguintes ações imple
 
 
 ## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+O código foi feito sem grande parte da lógica tendo apenas TODOS como orientação.
+
+Implementei os 3 métodos do menu conforme as instruções, além de fazer minhas próprias alterações, embora fosse minha intenção padronizar o
+entradas de placas não tive tempo de implementar agora, mas consegui implementar uma verificação no parse da função remover.
+
+### English
+
+## Project challenge
+This project was made as part of the Decola Tech Avanade 2024 course's set of projects 
+
+## Context
+You were hired to build a parking lot system, that will be used to manage the parked vehicles and perform operations, like adding and removing(also showing the owed value in the process) a vehicle as well as listing the parked vehicles.
+
+## Proposal
+You will need to build a class named "Estacionamento, like the diagram below:
+![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
+
+The class contains three variables, with them being:
+
+**precoInicial**: Decimal. The entry fee of the parking lot.
+
+**precoPorHora**: Decimal. The hourly fee of permanence.
+
+**veiculos**: A string list, displaying only the license plates, it's the list of parked vehicles.
+
+The class contains three methods, with them being:
+
+**AdicionarVeiculo**: Method responsible of receiving the number of the license plate and adding it to **veiculos**.
+
+**RemoverVeiculo**: Method responsible of verifying if a determined vehicle is parked, if true, ask the amount of hours of permanence and then performing the following: **precoInicial** * **precoPorHora**, and printing it to the user.
+
+**ListarVeiculos**: Lists the parked vehicles, if there are none, prints "Não há veículos estacionados".
+
+At last, there should be a menu with the following implemented:
+1. Register vehicle
+2. Remove vehicle
+3. List vehicle
+4. Close
+
+
+## Solution
+The code was made without a large part of the logic with only TODOS as guidance.
+
+I implemented the 3 methods of the menu as instructed as well as putting my own changes to it, altough it was my intention to standardize the 
+license plate inputs I did not have time to implement it now, but I managed to implement a check in the parse of the remove function. 
+
