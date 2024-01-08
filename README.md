@@ -51,7 +51,7 @@ entradas de placas não tive tempo de implementar agora, mas consegui implementa
 This project was made as part of the Decola Tech Avanade 2024 course's set of projects 
 
 ## Context
-You were hired to build a parking lot system, that will be used to manage the parked vehicles and perform operations, like adding and removing(also showing the owed value in the process) a vehicle as well as listing the parked vehicles.
+You were hired to build a parking lot system, that will be used to manage the parked vehicles and perform operations, like adding and removing (also showing the owed value in the process) a vehicle as well as listing the parked vehicles.
 
 ## Proposal
 You will need to build a class named "Estacionamento, like the diagram below:
