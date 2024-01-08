@@ -6,6 +6,10 @@ www.dio.me
 - [English](#english)
 
 ### Português
+
+## Aviso
+O projeto original (que recebeu o fork) estava em .NET 6.0 e no momento não sei atualizá-lo para 8.0, mas assim que aprender assim o farei.
+
 ## Desafio de projeto
 Atividade de projeto feita como parte do Decola Tech Avanade 2024 
 
@@ -46,6 +50,9 @@ Implementei os 3 métodos do menu conforme as instruções, além de fazer minha
 entradas de placas não tive tempo de implementar agora, mas consegui implementar uma verificação no parse da função remover.
 
 ### English
+
+## Notice
+The original project (which received the fork) was in .NET 6.0 and at the moment I don't know how to update it to 8.0, but as soon as I learn so I will do so.
 
 ## Project challenge
 This project was made as part of the Decola Tech Avanade 2024 course's set of projects 
