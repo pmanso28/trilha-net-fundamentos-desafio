@@ -34,9 +34,26 @@ namespace DesafioFundamentos.Models
 
                 // TODO: Pedir para o usuário digitar a quantidade de horas que o veículo permaneceu estacionado,
                 // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal                
-                
+
                 int horas = 0;
-                decimal valorTotal = 0; 
+                
+                try
+                {
+                    horas = int.Parse(Console.ReadLine());
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine(
+                        "Houve um erro computando as horas! Por favor " + // There was an error computing the hours parked,
+                        "certifique-se de que só digitou números e tente novamente!"); // please make sure you've typed only numbers and try again.
+                    RemoverVeiculo();
+                }
+
+                decimal permanencia = precoPorHora * horas;
+                
+                decimal valorTotal = precoInicial + permanencia;
+
+                veiculos.Remove(placa);
 
                 // TODO: Remover a placa digitada da lista de veículos
                 // *IMPLEMENTE AQUI*
