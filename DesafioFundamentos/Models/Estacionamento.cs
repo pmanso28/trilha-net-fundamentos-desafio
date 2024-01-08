@@ -1,5 +1,3 @@
-using System.Globalization;
-
 namespace DesafioFundamentos.Models
 {
     public class Estacionamento
@@ -32,9 +30,6 @@ namespace DesafioFundamentos.Models
             {
                 Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:"); //Please type the amount of hours the vehicle stood parked
 
-                // TODO: Pedir para o usuário digitar a quantidade de horas que o veículo permaneceu estacionado,
-                // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal                
-
                 int horas = 0;
                 
                 try
@@ -44,7 +39,7 @@ namespace DesafioFundamentos.Models
                 catch (Exception)
                 {
                     Console.WriteLine(
-                        "Houve um erro computando as horas! Por favor " + // There was an error computing the hours parked,
+                        "Houve um erro computando as horas! Por favor " +              // There was an error computing the hours parked,
                         "certifique-se de que só digitou números e tente novamente!"); // please make sure you've typed only numbers and try again.
                     RemoverVeiculo();
                 }
@@ -55,29 +50,30 @@ namespace DesafioFundamentos.Models
 
                 veiculos.Remove(placa);
 
-                // TODO: Remover a placa digitada da lista de veículos
-                // *IMPLEMENTE AQUI*
-
-                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
+                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: {valorTotal:C}"); //The vehicle {License Plate} was removed and the total price was of {Price}
             }
             else
             {
-                Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
+                Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. " + //Sorry, this vehicle is not parked here, 
+                                  "Por favor confira se digitou a placa corretamente");  //please check if you've written the correct license plate.
             }
         }
 
         public void ListarVeiculos()
         {
             // Verifica se há veículos no estacionamento
+            // Check if there are any parked vehicles.
             if (veiculos.Any())
             {
-                Console.WriteLine("Os veículos estacionados são:");
-                // TODO: Realizar um laço de repetição, exibindo os veículos estacionados
-                // *IMPLEMENTE AQUI*
+                Console.WriteLine("Os veículos estacionados são:"); //The parked vehicles are:
+                foreach (var vaga in veiculos)
+                {
+                    Console.WriteLine(vaga);
+                }
             }
             else
             {
-                Console.WriteLine("Não há veículos estacionados.");
+                Console.WriteLine("Não há veículos estacionados."); //There are no vehicles parked
             }
         }
     }
