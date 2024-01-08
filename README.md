@@ -55,7 +55,8 @@ You were hired to build a parking lot system, that will be used to manage the pa
 
 ## Proposal
 You will need to build a class named "Estacionamento, like the diagram below:
-![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
+
+![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png) 
 
 The class contains three variables, with them being:
 
